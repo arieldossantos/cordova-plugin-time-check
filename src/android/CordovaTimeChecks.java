@@ -12,7 +12,7 @@ public class CordovaTimeChecks extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         boolean ret = false;
-        if(action == "isAutomaticTimeZone") {
+        if(action.equals("isAutomaticTimeZone")) {
                 ret = isAutomaticTimeZone(callbackContext);
         }
         return ret;
@@ -21,14 +21,14 @@ public class CordovaTimeChecks extends CordovaPlugin {
     private boolean isAutomaticTimeZone(CallbackContext cb) {
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-                if(Settings.Global.getInt(this.cordova.getActivity().getApplicationContext().getContentResolver(), Settings.Global.AUTO_TIME, 0) == 1) {
+                if(Settings.Global.getInt(this.cordova.getActivity().getContentResolver(), Settings.Global.AUTO_TIME, 0) == 1) {
                     cb.success("true");
                 } else {
                     cb.error("false");
                 }
                 return true;
             } else {
-                if(android.provider.Settings.System.getInt(this.cordova.getActivity().getApplicationContext().getContentResolver(), android.provider.Settings.System.AUTO_TIME, 0) == 1) {
+                if(android.provider.Settings.System.getInt(this.cordova.getActivity().getContentResolver(), android.provider.Settings.System.AUTO_TIME, 0) == 1) {
                     cb.success("true");
                 } else {
                     cb.error("false");
