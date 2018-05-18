@@ -3,7 +3,7 @@
         id="cordova-time-checks"
         version="0.7.0">
 
-  <name>Hello</name>
+  <name>Cordova Time Checks</name>
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
