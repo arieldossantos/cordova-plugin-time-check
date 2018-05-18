@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-time-check",
+  "version": "1.0.0",
+  "description": "Cordova Plugin Time Check",
+  "main": "www/cptc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arieldossantos/cordova-plugin-time-check"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "time",
+    "check",
+    "time",
+    "validator",
+    "time",
+    "validator"
+  ],
+  "author": "Ariel Reis",
+  "license": "MIT"
+}

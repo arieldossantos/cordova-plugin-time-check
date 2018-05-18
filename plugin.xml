@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="cordova-time-checks"
+        version="0.7.0">
+
+  <name>Hello</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/cptc.js" target="js/cptc.js"/>
+
+  <js-module src="www/cptc.js" name="cptc">
+    <clobbers target="cptc" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="CordovaTimeChecks">
+        <param name="android-package" value="io.github.arieldossantos.CordovaTimeChecks"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/CordovaTimeChecks.java" target-dir="src/io/github/arieldossantos/"/>
+  </platform>
+</plugin>
