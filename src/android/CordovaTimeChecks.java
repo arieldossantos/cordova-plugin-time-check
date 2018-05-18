@@ -12,10 +12,8 @@ public class CordovaTimeChecks extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         boolean ret = false;
-        switch (action) {
-            case "isAutomaticTimeZone":
+        if(action == "isAutomaticTimeZone") {
                 ret = isAutomaticTimeZone(callbackContext);
-                break;
         }
         return ret;
     }
