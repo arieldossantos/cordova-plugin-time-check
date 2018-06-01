@@ -21,7 +21,8 @@ public class CordovaTimeChecks extends CordovaPlugin {
     private boolean isAutomaticTimeZone(CallbackContext cb) {
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-                if(Settings.Global.getInt(this.cordova.getActivity().getContentResolver(), Settings.Global.AUTO_TIME, 0) == 1) {
+                if((Settings.Global.getInt(this.cordova.getActivity().getContentResolver(), Settings.Global.AUTO_TIME, 0) == 1) &&
+                        Settings.Global.getInt(this.cordova.getActivity().getContentResolver(), Settings.Global.AUTO_TIME_ZONE, 0) == 1) {
                     cb.success("true");
                 } else {
                     cb.error("false");
