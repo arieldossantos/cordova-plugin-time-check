@@ -25,4 +25,19 @@
 
     <source-file src="src/android/CordovaTimeChecks.java" target-dir="src/io/github/arieldossantos/"/>
   </platform>
+
+      <!-- ios -->
+    <platform name="ios">
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="CordovaTimeChecks">
+                <param name="ios-package" value="CDVTimeChecks" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/CDVTimeChecks.h" />
+        <source-file src="src/ios/CDVTimeChecks.m" />
+
+    </platform>
 </plugin>
