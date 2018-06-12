@@ -1,34 +1,15 @@
 {
-  "_from": "git+https://github.com/arieldossantos/cordova-plugin-time-check.git",
-  "_id": "cordova-plugin-time-check@1.0.0",
-  "_inBundle": false,
-  "_location": "/cordova-plugin-time-check",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "git",
-    "raw": "https://github.com/arieldossantos/cordova-plugin-time-check.git",
-    "rawSpec": "https://github.com/arieldossantos/cordova-plugin-time-check.git",
-    "saveSpec": "git+https://github.com/arieldossantos/cordova-plugin-time-check.git",
-    "fetchSpec": "https://github.com/arieldossantos/cordova-plugin-time-check.git",
-    "gitCommittish": null
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "git+https://github.com/arieldossantos/cordova-plugin-time-check.git#94d878849097c0d56c82f64e9a632c39f7c29478",
-  "_spec": "https://github.com/arieldossantos/cordova-plugin-time-check.git",
-  "_where": "C:\\Git\\qrpointapp-v2",
-  "author": {
-    "name": "Ariel Reis"
-  },
-  "bugs": {
-    "url": "https://github.com/arieldossantos/cordova-plugin-time-check/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
+  "name": "cordova-plugin-time-check",
+  "version": "1.0.0",
   "description": "Cordova Plugin Time Check",
-  "homepage": "https://github.com/arieldossantos/cordova-plugin-time-check#readme",
+  "main": "www/cptc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arieldossantos/cordova-plugin-time-check.git"
+  },
   "keywords": [
     "cordova",
     "plugin",
@@ -39,15 +20,6 @@
     "time",
     "validator"
   ],
-  "license": "MIT",
-  "main": "www/cptc.js",
-  "name": "cordova-plugin-time-check",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arieldossantos/cordova-plugin-time-check.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "1.0.0"
+  "author": "Ariel Reis",
+  "license": "MIT"
 }
